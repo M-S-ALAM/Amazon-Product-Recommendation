@@ -17,7 +17,7 @@ class Recommendation_TFIDF:
         self.title_features = None
         self.title_vectorizer=None
         self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/pickels/16k_apperal_data_preprocessed')
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 

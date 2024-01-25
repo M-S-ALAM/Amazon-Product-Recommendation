@@ -27,12 +27,12 @@ select_algorithm = st.selectbox('Choose Algorithm',
 number_ = st.number_input('Number of recommendation', min_value=1, max_value=10)
 
 submit_button = st.button(label='Prediction', type='primary')
-data = pd.read_pickle('/home/shobot/Desktop/Project pro/Amazon Product Reviews/pickels/16k_apperal_data_preprocessed')
+data = pd.read_pickle('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
 if submit_button:
     if asin_number is not None:
         indices = Combine_results(asin_number, number_, select_algorithm).Recommended_results()
         df_indices = list(data.index[indices])
-        st.write(':green[Search Items]')
+        st.write(':red[Search Items]')
         #data = data.reset_index(drop=True)
         indexes = data[data['asin'] == asin_number].index
         col1, col2 = st.columns(2)
@@ -45,7 +45,7 @@ if submit_button:
             st.write('Brand:', data['brand'].loc[indexes[0]])
             st.write('Title:', data['title'].loc[indexes[0]])
         st.write('='*88)
-        st.write(':green[Recommended Items]')
+        st.write(':red[Recommended Items]')
         for i in range(len(df_indices)-1):
             col1, col2 = st.columns(2)
             with col1:

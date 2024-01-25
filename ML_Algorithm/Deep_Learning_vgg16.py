@@ -12,11 +12,11 @@ class Deep_Learning_VGG16:
         self.asin = asin
         self.num_results = num_results
         self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/16k_apperal_data_preprocessed')
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
         self.df_asins = list(self.data['asin'])
         self.bottleneck_features_train = np.load(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/16k_data_cnn_features.npy')
-        self.asins = np.load('/home/shobot/Desktop/Project pro/Amazon Product Reviews/16k_data_cnn_feature_asins.npy')
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_data_cnn_features.npy')
+        self.asins = np.load('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_data_cnn_feature_asins.npy')
 
     # get similar products using CNN features (VGG-16)
 

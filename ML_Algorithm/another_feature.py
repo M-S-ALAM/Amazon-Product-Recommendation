@@ -37,7 +37,7 @@ class Recommend_with_features:
         self.colors = None
         self.types = None
         self.brands = None
-        self.data = pd.read_pickle('/home/shobot/Desktop/Project pro/Amazon Product Reviews/pickels/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
         self.w2v_title = []
@@ -129,7 +129,7 @@ class Recommend_with_features:
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/word2vec_model', 'rb') as f:
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             self.extra_features = self.add_features()
@@ -151,7 +151,7 @@ class Recommend_with_features:
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/word2vec_model', 'rb') as f:
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             self.extra_features = self.add_features()

@@ -26,7 +26,7 @@ class Recommendation_weighted_word2vec:
         self.title_vectorizer = None
         self.w2v_title = []
         self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/pickels/16k_apperal_data_preprocessed')
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 
@@ -95,7 +95,7 @@ class Recommendation_weighted_word2vec:
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/word2vec_model', 'rb') as f:
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             for i in self.data['title']:
@@ -114,7 +114,7 @@ class Recommendation_weighted_word2vec:
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/word2vec_model', 'rb') as f:
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             for i in self.data['title']:
