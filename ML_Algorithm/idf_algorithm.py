@@ -1,17 +1,26 @@
+# -- coding: UTF-8 --
+"""
+Method to recommend similar product based on color, brand, product type, and title.
+========================================================================================
+"""
+
 import pandas as pd
 import requests
 import re
 import math
+import logging
 from io import BytesIO
 from PIL import Image
 import numpy as np
 import seaborn as sns
-from matplotlib.backends.backend_agg import FigureCanvasAgg
 from sklearn.metrics import pairwise_distances
 from sklearn.feature_extraction.text import TfidfVectorizer
 from collections import Counter
 from matplotlib import gridspec
 import matplotlib.pyplot as plt
+
+__author__ = "msalamiitd@gmail.com"
+LOGGER = logging.getLogger(__name__)
 
 
 class Recommendation_IDF:

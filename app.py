@@ -1,9 +1,19 @@
+# -- coding: UTF-8 --
+"""
+Method to recommend similar product based on color, brand, product type, and title.
+========================================================================================
+"""
+
 import pandas as pd
 from PIL import Image
 import requests
 from io import BytesIO
 import streamlit as st
 from ML_Algorithm.merge_result import Combine_results
+
+
+__author__ = "msalamiitd@gmail.com"
+
 
 st.set_page_config(page_title='Amazon Recommendation', page_icon='🏡', layout='centered')
 st.title(':green[Amazon Apparel Recommendations]')
@@ -20,10 +30,14 @@ def fetch_image_from_url(url):
 
 asin_number = st.text_input('Enter ASIN number')
 select_algorithm = st.selectbox('Choose Algorithm',
-                                options=['Bag of Word(BOW)', 'Term frequency-inverse document frequency(TF-IDF)',
-                                         'Inverse document frequency(IDF)', 'Average Word 2 Vec',
-                                         'IDF weighted Word 2 vec', 'Algorithm with brand and color',
-                                         'Deep Learning(VGG16)', 'All the algorithm combined results'])
+                                options=['Bag of Word(BOW)',
+                                         'Term frequency-inverse document frequency(TF-IDF)',
+                                         'Inverse document frequency(IDF)',
+                                         'Average Word 2 Vec',
+                                         'IDF weighted Word 2 vec',
+                                         'Algorithm with brand and color',
+                                         'Deep Learning(VGG16)',
+                                         'All the algorithm combined results'])
 number_ = st.number_input('Number of recommendation', min_value=1, max_value=10)
 
 submit_button = st.button(label='Prediction', type='primary')
@@ -33,7 +47,6 @@ if submit_button:
         indices = Combine_results(asin_number, number_, select_algorithm).Recommended_results()
         df_indices = list(data.index[indices])
         st.write(':red[Search Items]')
-        #data = data.reset_index(drop=True)
         indexes = data[data['asin'] == asin_number].index
         col1, col2 = st.columns(2)
         with col1:

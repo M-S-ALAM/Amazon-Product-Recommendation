@@ -1,3 +1,9 @@
+# -- coding: UTF-8 --
+"""
+Method to recommend similar product based on color, brand, product type, and title.
+========================================================================================
+"""
+import logging
 import pandas as pd
 from ML_Algorithm.BOW_algorithm import Recommendation_BOW
 from ML_Algorithm.TF_IDF_algorithm import Recommendation_TFIDF
@@ -6,6 +12,9 @@ from ML_Algorithm.avg_word2vec_algorithm import Recommendation_word2vec
 from ML_Algorithm.weighted_word2vec import Recommendation_weighted_word2vec
 from ML_Algorithm.Deep_Learning_vgg16 import Deep_Learning_VGG16
 from ML_Algorithm.another_feature import Recommend_with_features
+
+__author__ = "msalamiitd@gmail.com"
+LOGGER = logging.getLogger(__name__)
 
 
 class Combine_results:

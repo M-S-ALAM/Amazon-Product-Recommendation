@@ -7,6 +7,7 @@ from gensim.models import Word2Vec
 from gensim.models import KeyedVectors
 import pickle
 import requests
+import logging
 import matplotlib.pyplot as plt
 from PIL import Image
 from io import BytesIO
@@ -15,6 +16,9 @@ import pandas as pd
 from sklearn.metrics import pairwise_distances
 from matplotlib import gridspec
 import numpy as np
+
+__author__ = "msalamiitd@gmail.com"
+LOGGER = logging.getLogger(__name__)
 
 
 class Recommendation_word2vec:
@@ -124,8 +128,8 @@ class Recommendation_word2vec:
                 print('BRAND :', self.data['brand'].loc[df_indices[i]])
                 print('euclidean distance from given input image :', pdists[i])
                 print('=' * 125)
-            else:
-                print('ASIN number is not in data base')
+        else:
+            print('ASIN number is not in data base')
 
 
 if __name__ == '__main__':

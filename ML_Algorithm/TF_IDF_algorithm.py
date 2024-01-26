@@ -1,3 +1,9 @@
+# -- coding: UTF-8 --
+"""
+Method to recommend similar product based on color, brand, product type, and title.
+========================================================================================
+"""
+
 import pandas as pd
 import requests
 import re

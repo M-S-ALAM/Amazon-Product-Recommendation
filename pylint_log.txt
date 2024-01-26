@@ -1,0 +1,817 @@
+************* Module another_feature
+ML_Algorithm/another_feature.py:40: [C0301(line-too-long), ] Line too long (132/100)
+ML_Algorithm/another_feature.py:81: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/another_feature.py:102: [C0301(line-too-long), ] Line too long (101/100)
+ML_Algorithm/another_feature.py:107: [C0301(line-too-long), ] Line too long (120/100)
+ML_Algorithm/another_feature.py:108: [C0301(line-too-long), ] Line too long (120/100)
+ML_Algorithm/another_feature.py:132: [C0301(line-too-long), ] Line too long (116/100)
+ML_Algorithm/another_feature.py:140: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/another_feature.py:141: [C0301(line-too-long), ] Line too long (104/100)
+ML_Algorithm/another_feature.py:142: [C0301(line-too-long), ] Line too long (104/100)
+ML_Algorithm/another_feature.py:154: [C0301(line-too-long), ] Line too long (116/100)
+ML_Algorithm/another_feature.py:162: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/another_feature.py:163: [C0301(line-too-long), ] Line too long (104/100)
+ML_Algorithm/another_feature.py:164: [C0301(line-too-long), ] Line too long (104/100)
+ML_Algorithm/another_feature.py:170: [C0301(line-too-long), ] Line too long (117/100)
+ML_Algorithm/another_feature.py:171: [C0301(line-too-long), ] Line too long (113/100)
+ML_Algorithm/another_feature.py:26: [C0112(empty-docstring), Recommend_with_features] Empty class docstring
+ML_Algorithm/another_feature.py:26: [C0103(invalid-name), Recommend_with_features] Class name "Recommend_with_features" doesn't conform to PascalCase naming style
+ML_Algorithm/another_feature.py:26: [R0902(too-many-instance-attributes), Recommend_with_features] Too many instance attributes (15/7)
+ML_Algorithm/another_feature.py:45: [C0116(missing-function-docstring), Recommend_with_features.add_features] Missing function or method docstring
+ML_Algorithm/another_feature.py:63: [C0116(missing-function-docstring), Recommend_with_features.display_img] Missing function or method docstring
+ML_Algorithm/another_feature.py:64: [W3101(missing-timeout), Recommend_with_features.display_img] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/another_feature.py:68: [C0116(missing-function-docstring), Recommend_with_features.get_distance] Missing function or method docstring
+ML_Algorithm/another_feature.py:77: [C0116(missing-function-docstring), Recommend_with_features.get_word_vec] Missing function or method docstring
+ML_Algorithm/another_feature.py:86: [C0116(missing-function-docstring), Recommend_with_features.vectorized] Missing function or method docstring
+ML_Algorithm/another_feature.py:91: [C0116(missing-function-docstring), Recommend_with_features.build_avg_vec] Missing function or method docstring
+ML_Algorithm/another_feature.py:92: [C0103(invalid-name), Recommend_with_features.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/another_feature.py:97: [C0103(invalid-name), Recommend_with_features.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/another_feature.py:99: [C0103(invalid-name), Recommend_with_features.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/another_feature.py:91: [W0613(unused-argument), Recommend_with_features.build_avg_vec] Unused argument 'doc_id'
+ML_Algorithm/another_feature.py:91: [W0613(unused-argument), Recommend_with_features.build_avg_vec] Unused argument 'm_name'
+ML_Algorithm/another_feature.py:102: [C0116(missing-function-docstring), Recommend_with_features.heat_map_w2v_brand] Missing function or method docstring
+ML_Algorithm/another_feature.py:102: [R0913(too-many-arguments), Recommend_with_features.heat_map_w2v_brand] Too many arguments (9/5)
+ML_Algorithm/another_feature.py:102: [R0914(too-many-locals), Recommend_with_features.heat_map_w2v_brand] Too many local variables (19/15)
+ML_Algorithm/another_feature.py:102: [W0613(unused-argument), Recommend_with_features.heat_map_w2v_brand] Unused argument 'model'
+ML_Algorithm/another_feature.py:113: [W0612(unused-variable), Recommend_with_features.heat_map_w2v_brand] Unused variable 'fig'
+ML_Algorithm/another_feature.py:126: [C0116(missing-function-docstring), Recommend_with_features.get_similar_product] Missing function or method docstring
+ML_Algorithm/another_feature.py:129: [R1705(no-else-return), Recommend_with_features.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/another_feature.py:148: [C0116(missing-function-docstring), Recommend_with_features.idf_w2v_brand] Missing function or method docstring
+ML_Algorithm/another_feature.py:169: [C0200(consider-using-enumerate), Recommend_with_features.idf_w2v_brand] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/another_feature.py:128: [W0201(attribute-defined-outside-init), Recommend_with_features.get_similar_product] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/another_feature.py:150: [W0201(attribute-defined-outside-init), Recommend_with_features.idf_w2v_brand] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/another_feature.py:134: [W0201(attribute-defined-outside-init), Recommend_with_features.get_similar_product] Attribute 'vocab' defined outside __init__
+ML_Algorithm/another_feature.py:156: [W0201(attribute-defined-outside-init), Recommend_with_features.idf_w2v_brand] Attribute 'vocab' defined outside __init__
+ML_Algorithm/another_feature.py:11: [C0411(wrong-import-order), ] standard import "import pickle" should be placed before "import matplotlib.pyplot as plt"
+ML_Algorithm/another_feature.py:12: [C0411(wrong-import-order), ] standard import "import logging" should be placed before "import matplotlib.pyplot as plt"
+ML_Algorithm/another_feature.py:16: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "import matplotlib.pyplot as plt"
+************* Module avg_word2vec_algorithm
+ML_Algorithm/avg_word2vec_algorithm.py:26: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/avg_word2vec_algorithm.py:90: [C0301(line-too-long), ] Line too long (116/100)
+ML_Algorithm/avg_word2vec_algorithm.py:97: [C0301(line-too-long), ] Line too long (110/100)
+ML_Algorithm/avg_word2vec_algorithm.py:108: [C0301(line-too-long), ] Line too long (116/100)
+ML_Algorithm/avg_word2vec_algorithm.py:115: [C0301(line-too-long), ] Line too long (110/100)
+ML_Algorithm/avg_word2vec_algorithm.py:121: [C0301(line-too-long), ] Line too long (111/100)
+ML_Algorithm/avg_word2vec_algorithm.py:122: [C0301(line-too-long), ] Line too long (114/100)
+ML_Algorithm/avg_word2vec_algorithm.py:20: [C0115(missing-class-docstring), Recommendation_word2vec] Missing class docstring
+ML_Algorithm/avg_word2vec_algorithm.py:20: [C0103(invalid-name), Recommendation_word2vec] Class name "Recommendation_word2vec" doesn't conform to PascalCase naming style
+ML_Algorithm/avg_word2vec_algorithm.py:30: [C0116(missing-function-docstring), Recommendation_word2vec.display_img] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:31: [W3101(missing-timeout), Recommendation_word2vec.display_img] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/avg_word2vec_algorithm.py:30: [W0613(unused-argument), Recommendation_word2vec.display_img] Unused argument 'ax'
+ML_Algorithm/avg_word2vec_algorithm.py:30: [W0613(unused-argument), Recommendation_word2vec.display_img] Unused argument 'fig'
+ML_Algorithm/avg_word2vec_algorithm.py:35: [C0116(missing-function-docstring), Recommendation_word2vec.get_distance] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:44: [C0116(missing-function-docstring), Recommendation_word2vec.get_word_vec] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:44: [W0613(unused-argument), Recommendation_word2vec.get_word_vec] Unused argument 'doc_id'
+ML_Algorithm/avg_word2vec_algorithm.py:44: [W0613(unused-argument), Recommendation_word2vec.get_word_vec] Unused argument 'm_name'
+ML_Algorithm/avg_word2vec_algorithm.py:53: [C0116(missing-function-docstring), Recommendation_word2vec.build_avg_vec] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:55: [C0103(invalid-name), Recommendation_word2vec.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/avg_word2vec_algorithm.py:60: [C0103(invalid-name), Recommendation_word2vec.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/avg_word2vec_algorithm.py:62: [C0103(invalid-name), Recommendation_word2vec.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/avg_word2vec_algorithm.py:53: [W0613(unused-argument), Recommendation_word2vec.build_avg_vec] Unused argument 'doc_id'
+ML_Algorithm/avg_word2vec_algorithm.py:53: [W0613(unused-argument), Recommendation_word2vec.build_avg_vec] Unused argument 'm_name'
+ML_Algorithm/avg_word2vec_algorithm.py:65: [C0116(missing-function-docstring), Recommendation_word2vec.heat_map_w2v] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:65: [R0913(too-many-arguments), Recommendation_word2vec.heat_map_w2v] Too many arguments (7/5)
+ML_Algorithm/avg_word2vec_algorithm.py:85: [C0116(missing-function-docstring), Recommendation_word2vec.get_similar_product] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:88: [R1705(no-else-return), Recommendation_word2vec.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/avg_word2vec_algorithm.py:103: [C0116(missing-function-docstring), Recommendation_word2vec.avg_w2v_model] Missing function or method docstring
+ML_Algorithm/avg_word2vec_algorithm.py:120: [C0200(consider-using-enumerate), Recommendation_word2vec.avg_w2v_model] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/avg_word2vec_algorithm.py:87: [W0201(attribute-defined-outside-init), Recommendation_word2vec.get_similar_product] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/avg_word2vec_algorithm.py:105: [W0201(attribute-defined-outside-init), Recommendation_word2vec.avg_w2v_model] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/avg_word2vec_algorithm.py:8: [C0411(wrong-import-order), ] standard import "import pickle" should be placed before "from gensim.models import Word2Vec"
+ML_Algorithm/avg_word2vec_algorithm.py:12: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "from gensim.models import Word2Vec"
+ML_Algorithm/avg_word2vec_algorithm.py:6: [W0611(unused-import), ] Unused Word2Vec imported from gensim.models
+ML_Algorithm/avg_word2vec_algorithm.py:7: [W0611(unused-import), ] Unused KeyedVectors imported from gensim.models
+************* Module BOW_algorithm
+ML_Algorithm/BOW_algorithm.py:25: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/BOW_algorithm.py:82: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/BOW_algorithm.py:94: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/BOW_algorithm.py:100: [C0301(line-too-long), ] Line too long (120/100)
+ML_Algorithm/BOW_algorithm.py:113: [C0304(missing-final-newline), ] Final newline missing
+ML_Algorithm/BOW_algorithm.py:1: [C0103(invalid-name), ] Module name "BOW_algorithm" doesn't conform to snake_case naming style
+ML_Algorithm/BOW_algorithm.py:21: [C0115(missing-class-docstring), Recommendation_BOW] Missing class docstring
+ML_Algorithm/BOW_algorithm.py:21: [C0103(invalid-name), Recommendation_BOW] Class name "Recommendation_BOW" doesn't conform to PascalCase naming style
+ML_Algorithm/BOW_algorithm.py:29: [C0116(missing-function-docstring), Recommendation_BOW.display_img] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:30: [W3101(missing-timeout), Recommendation_BOW.display_img] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/BOW_algorithm.py:29: [W0613(unused-argument), Recommendation_BOW.display_img] Unused argument 'ax'
+ML_Algorithm/BOW_algorithm.py:29: [W0613(unused-argument), Recommendation_BOW.display_img] Unused argument 'fig'
+ML_Algorithm/BOW_algorithm.py:34: [C0116(missing-function-docstring), Recommendation_BOW.plot_heatmap] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:34: [R0913(too-many-arguments), Recommendation_BOW.plot_heatmap] Too many arguments (6/5)
+ML_Algorithm/BOW_algorithm.py:48: [C0116(missing-function-docstring), Recommendation_BOW.plot_heatmap_image] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:48: [R0913(too-many-arguments), Recommendation_BOW.plot_heatmap_image] Too many arguments (7/5)
+ML_Algorithm/BOW_algorithm.py:48: [W0613(unused-argument), Recommendation_BOW.plot_heatmap_image] Unused argument 'doc_id'
+ML_Algorithm/BOW_algorithm.py:48: [W0613(unused-argument), Recommendation_BOW.plot_heatmap_image] Unused argument 'model'
+ML_Algorithm/BOW_algorithm.py:61: [C0116(missing-function-docstring), Recommendation_BOW.text_to_vector] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:66: [C0116(missing-function-docstring), Recommendation_BOW.get_result] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:66: [R0913(too-many-arguments), Recommendation_BOW.get_result] Too many arguments (6/5)
+ML_Algorithm/BOW_algorithm.py:73: [C0116(missing-function-docstring), Recommendation_BOW.vectorized] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:77: [C0116(missing-function-docstring), Recommendation_BOW.get_similar_product] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:80: [R1705(no-else-return), Recommendation_BOW.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/BOW_algorithm.py:89: [C0116(missing-function-docstring), Recommendation_BOW.bag_of_words_model] Missing function or method docstring
+ML_Algorithm/BOW_algorithm.py:98: [C0200(consider-using-enumerate), Recommendation_BOW.bag_of_words_model] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/BOW_algorithm.py:79: [W0201(attribute-defined-outside-init), Recommendation_BOW.get_similar_product] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/BOW_algorithm.py:91: [W0201(attribute-defined-outside-init), Recommendation_BOW.bag_of_words_model] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/BOW_algorithm.py:8: [C0411(wrong-import-order), ] standard import "import re" should be placed before "import pandas as pd"
+ML_Algorithm/BOW_algorithm.py:9: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "import pandas as pd"
+ML_Algorithm/BOW_algorithm.py:16: [C0411(wrong-import-order), ] standard import "from collections import Counter" should be placed before "import pandas as pd"
+ML_Algorithm/BOW_algorithm.py:17: [C0412(ungrouped-imports), ] Imports from package matplotlib are not grouped
+ML_Algorithm/BOW_algorithm.py:13: [W0611(unused-import), ] Unused FigureCanvasAgg imported from matplotlib.backends.backend_agg
+************* Module Deep_Learning_vgg16
+ML_Algorithm/Deep_Learning_vgg16.py:15: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/Deep_Learning_vgg16.py:18: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/Deep_Learning_vgg16.py:19: [C0301(line-too-long), ] Line too long (127/100)
+ML_Algorithm/Deep_Learning_vgg16.py:30: [C0301(line-too-long), ] Line too long (101/100)
+ML_Algorithm/Deep_Learning_vgg16.py:45: [C0301(line-too-long), ] Line too long (101/100)
+ML_Algorithm/Deep_Learning_vgg16.py:51: [C0301(line-too-long), ] Line too long (124/100)
+ML_Algorithm/Deep_Learning_vgg16.py:1: [C0114(missing-module-docstring), ] Missing module docstring
+ML_Algorithm/Deep_Learning_vgg16.py:1: [C0103(invalid-name), ] Module name "Deep_Learning_vgg16" doesn't conform to snake_case naming style
+ML_Algorithm/Deep_Learning_vgg16.py:10: [C0115(missing-class-docstring), Deep_Learning_VGG16] Missing class docstring
+ML_Algorithm/Deep_Learning_vgg16.py:10: [C0103(invalid-name), Deep_Learning_VGG16] Class name "Deep_Learning_VGG16" doesn't conform to PascalCase naming style
+ML_Algorithm/Deep_Learning_vgg16.py:23: [C0116(missing-function-docstring), Deep_Learning_VGG16.get_similar_product] Missing function or method docstring
+ML_Algorithm/Deep_Learning_vgg16.py:26: [R1705(no-else-return), Deep_Learning_VGG16.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/Deep_Learning_vgg16.py:27: [W0612(unused-variable), Deep_Learning_VGG16.get_similar_product] Unused variable 'asins'
+ML_Algorithm/Deep_Learning_vgg16.py:38: [C0116(missing-function-docstring), Deep_Learning_VGG16.get_similar_products_cnn] Missing function or method docstring
+ML_Algorithm/Deep_Learning_vgg16.py:50: [C0200(consider-using-enumerate), Deep_Learning_VGG16.get_similar_products_cnn] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/Deep_Learning_vgg16.py:53: [W3101(missing-timeout), Deep_Learning_VGG16.get_similar_products_cnn] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/Deep_Learning_vgg16.py:52: [W0612(unused-variable), Deep_Learning_VGG16.get_similar_products_cnn] Unused variable 'indx'
+ML_Algorithm/Deep_Learning_vgg16.py:7: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "import numpy as np"
+************* Module idf_algorithm
+ML_Algorithm/idf_algorithm.py:22: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/idf_algorithm.py:96: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/idf_algorithm.py:107: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/idf_algorithm.py:113: [C0301(line-too-long), ] Line too long (120/100)
+ML_Algorithm/idf_algorithm.py:1: [C0114(missing-module-docstring), ] Missing module docstring
+ML_Algorithm/idf_algorithm.py:17: [C0115(missing-class-docstring), Recommendation_IDF] Missing class docstring
+ML_Algorithm/idf_algorithm.py:17: [C0103(invalid-name), Recommendation_IDF] Class name "Recommendation_IDF" doesn't conform to PascalCase naming style
+ML_Algorithm/idf_algorithm.py:26: [C0116(missing-function-docstring), Recommendation_IDF.display_img] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:27: [W3101(missing-timeout), Recommendation_IDF.display_img] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/idf_algorithm.py:26: [W0613(unused-argument), Recommendation_IDF.display_img] Unused argument 'ax'
+ML_Algorithm/idf_algorithm.py:26: [W0613(unused-argument), Recommendation_IDF.display_img] Unused argument 'fig'
+ML_Algorithm/idf_algorithm.py:31: [C0116(missing-function-docstring), Recommendation_IDF.plot_heatmap] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:31: [R0913(too-many-arguments), Recommendation_IDF.plot_heatmap] Too many arguments (6/5)
+ML_Algorithm/idf_algorithm.py:45: [C0116(missing-function-docstring), Recommendation_IDF.plot_heatmap_image] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:45: [R0913(too-many-arguments), Recommendation_IDF.plot_heatmap_image] Too many arguments (6/5)
+ML_Algorithm/idf_algorithm.py:62: [C0116(missing-function-docstring), Recommendation_IDF.text_to_vector] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:67: [C0116(missing-function-docstring), Recommendation_IDF.get_result] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:74: [C0116(missing-function-docstring), Recommendation_IDF.vectorized] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:83: [C0116(missing-function-docstring), Recommendation_IDF.n_containing] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:87: [C0116(missing-function-docstring), Recommendation_IDF.idf] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:91: [C0116(missing-function-docstring), Recommendation_IDF.get_similar_product] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:94: [R1705(no-else-return), Recommendation_IDF.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/idf_algorithm.py:102: [C0116(missing-function-docstring), Recommendation_IDF.idf_model] Missing function or method docstring
+ML_Algorithm/idf_algorithm.py:111: [C0200(consider-using-enumerate), Recommendation_IDF.idf_model] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/idf_algorithm.py:93: [W0201(attribute-defined-outside-init), Recommendation_IDF.get_similar_product] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/idf_algorithm.py:104: [W0201(attribute-defined-outside-init), Recommendation_IDF.idf_model] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/idf_algorithm.py:3: [C0411(wrong-import-order), ] standard import "import re" should be placed before "import pandas as pd"
+ML_Algorithm/idf_algorithm.py:4: [C0411(wrong-import-order), ] standard import "import math" should be placed before "import pandas as pd"
+ML_Algorithm/idf_algorithm.py:5: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "import pandas as pd"
+ML_Algorithm/idf_algorithm.py:12: [C0411(wrong-import-order), ] standard import "from collections import Counter" should be placed before "import pandas as pd"
+ML_Algorithm/idf_algorithm.py:13: [C0412(ungrouped-imports), ] Imports from package matplotlib are not grouped
+ML_Algorithm/idf_algorithm.py:9: [W0611(unused-import), ] Unused FigureCanvasAgg imported from matplotlib.backends.backend_agg
+************* Module merge_result
+ML_Algorithm/merge_result.py:17: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/merge_result.py:30: [C0301(line-too-long), ] Line too long (114/100)
+ML_Algorithm/merge_result.py:33: [C0301(line-too-long), ] Line too long (104/100)
+ML_Algorithm/merge_result.py:36: [C0301(line-too-long), ] Line too long (123/100)
+ML_Algorithm/merge_result.py:44: [C0301(line-too-long), ] Line too long (114/100)
+ML_Algorithm/merge_result.py:45: [C0301(line-too-long), ] Line too long (104/100)
+ML_Algorithm/merge_result.py:49: [C0301(line-too-long), ] Line too long (129/100)
+ML_Algorithm/merge_result.py:1: [C0114(missing-module-docstring), ] Missing module docstring
+ML_Algorithm/merge_result.py:2: [E0401(import-error), ] Unable to import 'ML_Algorithm.BOW_algorithm'
+ML_Algorithm/merge_result.py:3: [E0401(import-error), ] Unable to import 'ML_Algorithm.TF_IDF_algorithm'
+ML_Algorithm/merge_result.py:4: [E0401(import-error), ] Unable to import 'ML_Algorithm.idf_algorithm'
+ML_Algorithm/merge_result.py:5: [E0401(import-error), ] Unable to import 'ML_Algorithm.avg_word2vec_algorithm'
+ML_Algorithm/merge_result.py:6: [E0401(import-error), ] Unable to import 'ML_Algorithm.weighted_word2vec'
+ML_Algorithm/merge_result.py:7: [E0401(import-error), ] Unable to import 'ML_Algorithm.Deep_Learning_vgg16'
+ML_Algorithm/merge_result.py:8: [E0401(import-error), ] Unable to import 'ML_Algorithm.another_feature'
+ML_Algorithm/merge_result.py:11: [C0115(missing-class-docstring), Combine_results] Missing class docstring
+ML_Algorithm/merge_result.py:11: [C0103(invalid-name), Combine_results] Class name "Combine_results" doesn't conform to PascalCase naming style
+ML_Algorithm/merge_result.py:19: [C0116(missing-function-docstring), Combine_results.Recommended_results] Missing function or method docstring
+ML_Algorithm/merge_result.py:19: [C0103(invalid-name), Combine_results.Recommended_results] Method name "Recommended_results" doesn't conform to snake_case naming style
+ML_Algorithm/merge_result.py:20: [C0103(invalid-name), Combine_results.Recommended_results] Variable name "Indices" doesn't conform to snake_case naming style
+ML_Algorithm/merge_result.py:21: [R1705(no-else-return), Combine_results.Recommended_results] Unnecessary "elif" after "return", remove the leading "el" from "elif"
+ML_Algorithm/merge_result.py:52: [C0103(invalid-name), Combine_results.Recommended_results] Variable name "Indices" doesn't conform to snake_case naming style
+ML_Algorithm/merge_result.py:19: [R0911(too-many-return-statements), Combine_results.Recommended_results] Too many return statements (7/6)
+ML_Algorithm/merge_result.py:19: [R1710(inconsistent-return-statements), Combine_results.Recommended_results] Either all return statements in a function should return an expression, or none of them should.
+ML_Algorithm/merge_result.py:11: [R0903(too-few-public-methods), Combine_results] Too few public methods (1/2)
+ML_Algorithm/merge_result.py:60: [C0116(missing-function-docstring), main] Missing function or method docstring
+ML_Algorithm/merge_result.py:61: [E1120(no-value-for-parameter), main] No value for argument 'model' in constructor call
+************* Module TF_IDF_algorithm
+ML_Algorithm/TF_IDF_algorithm.py:20: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/TF_IDF_algorithm.py:83: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/TF_IDF_algorithm.py:94: [C0301(line-too-long), ] Line too long (105/100)
+ML_Algorithm/TF_IDF_algorithm.py:100: [C0301(line-too-long), ] Line too long (120/100)
+ML_Algorithm/TF_IDF_algorithm.py:112: [C0304(missing-final-newline), ] Final newline missing
+ML_Algorithm/TF_IDF_algorithm.py:1: [C0114(missing-module-docstring), ] Missing module docstring
+ML_Algorithm/TF_IDF_algorithm.py:1: [C0103(invalid-name), ] Module name "TF_IDF_algorithm" doesn't conform to snake_case naming style
+ML_Algorithm/TF_IDF_algorithm.py:15: [C0115(missing-class-docstring), Recommendation_TFIDF] Missing class docstring
+ML_Algorithm/TF_IDF_algorithm.py:15: [C0103(invalid-name), Recommendation_TFIDF] Class name "Recommendation_TFIDF" doesn't conform to PascalCase naming style
+ML_Algorithm/TF_IDF_algorithm.py:24: [C0116(missing-function-docstring), Recommendation_TFIDF.display_img] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:25: [W3101(missing-timeout), Recommendation_TFIDF.display_img] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/TF_IDF_algorithm.py:24: [W0613(unused-argument), Recommendation_TFIDF.display_img] Unused argument 'ax'
+ML_Algorithm/TF_IDF_algorithm.py:24: [W0613(unused-argument), Recommendation_TFIDF.display_img] Unused argument 'fig'
+ML_Algorithm/TF_IDF_algorithm.py:29: [C0116(missing-function-docstring), Recommendation_TFIDF.plot_heatmap] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:29: [R0913(too-many-arguments), Recommendation_TFIDF.plot_heatmap] Too many arguments (6/5)
+ML_Algorithm/TF_IDF_algorithm.py:43: [C0116(missing-function-docstring), Recommendation_TFIDF.plot_heatmap_image] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:43: [R0913(too-many-arguments), Recommendation_TFIDF.plot_heatmap_image] Too many arguments (6/5)
+ML_Algorithm/TF_IDF_algorithm.py:60: [C0116(missing-function-docstring), Recommendation_TFIDF.text_to_vector] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:65: [C0116(missing-function-docstring), Recommendation_TFIDF.get_result] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:72: [C0116(missing-function-docstring), Recommendation_TFIDF.vectorized] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:78: [C0116(missing-function-docstring), Recommendation_TFIDF.get_similar_product] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:81: [R1705(no-else-return), Recommendation_TFIDF.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/TF_IDF_algorithm.py:89: [C0116(missing-function-docstring), Recommendation_TFIDF.tfidf_model] Missing function or method docstring
+ML_Algorithm/TF_IDF_algorithm.py:98: [C0200(consider-using-enumerate), Recommendation_TFIDF.tfidf_model] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/TF_IDF_algorithm.py:80: [W0201(attribute-defined-outside-init), Recommendation_TFIDF.get_similar_product] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/TF_IDF_algorithm.py:91: [W0201(attribute-defined-outside-init), Recommendation_TFIDF.tfidf_model] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/TF_IDF_algorithm.py:3: [C0411(wrong-import-order), ] standard import "import re" should be placed before "import pandas as pd"
+ML_Algorithm/TF_IDF_algorithm.py:4: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "import pandas as pd"
+ML_Algorithm/TF_IDF_algorithm.py:10: [C0411(wrong-import-order), ] standard import "from collections import Counter" should be placed before "import pandas as pd"
+************* Module weighted_word2vec
+ML_Algorithm/weighted_word2vec.py:29: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/weighted_word2vec.py:51: [C0301(line-too-long), ] Line too long (109/100)
+ML_Algorithm/weighted_word2vec.py:98: [C0301(line-too-long), ] Line too long (116/100)
+ML_Algorithm/weighted_word2vec.py:105: [C0301(line-too-long), ] Line too long (110/100)
+ML_Algorithm/weighted_word2vec.py:117: [C0301(line-too-long), ] Line too long (116/100)
+ML_Algorithm/weighted_word2vec.py:124: [C0301(line-too-long), ] Line too long (110/100)
+ML_Algorithm/weighted_word2vec.py:130: [C0301(line-too-long), ] Line too long (111/100)
+ML_Algorithm/weighted_word2vec.py:131: [C0301(line-too-long), ] Line too long (114/100)
+ML_Algorithm/weighted_word2vec.py:21: [C0115(missing-class-docstring), Recommendation_weighted_word2vec] Missing class docstring
+ML_Algorithm/weighted_word2vec.py:21: [C0103(invalid-name), Recommendation_weighted_word2vec] Class name "Recommendation_weighted_word2vec" doesn't conform to PascalCase naming style
+ML_Algorithm/weighted_word2vec.py:21: [R0902(too-many-instance-attributes), Recommendation_weighted_word2vec] Too many instance attributes (9/7)
+ML_Algorithm/weighted_word2vec.py:33: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.display_img] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:34: [W3101(missing-timeout), Recommendation_weighted_word2vec.display_img] Missing timeout argument for method 'requests.get' can cause your program to hang indefinitely
+ML_Algorithm/weighted_word2vec.py:33: [W0613(unused-argument), Recommendation_weighted_word2vec.display_img] Unused argument 'ax'
+ML_Algorithm/weighted_word2vec.py:33: [W0613(unused-argument), Recommendation_weighted_word2vec.display_img] Unused argument 'fig'
+ML_Algorithm/weighted_word2vec.py:38: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.get_distance] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:47: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.get_word_vec] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:47: [W0613(unused-argument), Recommendation_weighted_word2vec.get_word_vec] Unused argument 'm_name'
+ML_Algorithm/weighted_word2vec.py:56: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.build_avg_vec] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:58: [C0103(invalid-name), Recommendation_weighted_word2vec.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/weighted_word2vec.py:63: [C0103(invalid-name), Recommendation_weighted_word2vec.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/weighted_word2vec.py:65: [C0103(invalid-name), Recommendation_weighted_word2vec.build_avg_vec] Variable name "featureVec" doesn't conform to snake_case naming style
+ML_Algorithm/weighted_word2vec.py:56: [W0613(unused-argument), Recommendation_weighted_word2vec.build_avg_vec] Unused argument 'doc_id'
+ML_Algorithm/weighted_word2vec.py:56: [W0613(unused-argument), Recommendation_weighted_word2vec.build_avg_vec] Unused argument 'm_name'
+ML_Algorithm/weighted_word2vec.py:68: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.heat_map_w2v] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:68: [R0913(too-many-arguments), Recommendation_weighted_word2vec.heat_map_w2v] Too many arguments (7/5)
+ML_Algorithm/weighted_word2vec.py:87: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.vectorized] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:92: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.get_similar_product] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:95: [R1705(no-else-return), Recommendation_weighted_word2vec.get_similar_product] Unnecessary "else" after "return", remove the "else" and de-indent the code inside it
+ML_Algorithm/weighted_word2vec.py:111: [C0116(missing-function-docstring), Recommendation_weighted_word2vec.weighted_w2v_model] Missing function or method docstring
+ML_Algorithm/weighted_word2vec.py:129: [C0200(consider-using-enumerate), Recommendation_weighted_word2vec.weighted_w2v_model] Consider using enumerate instead of iterating with range and len
+ML_Algorithm/weighted_word2vec.py:94: [W0201(attribute-defined-outside-init), Recommendation_weighted_word2vec.get_similar_product] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/weighted_word2vec.py:113: [W0201(attribute-defined-outside-init), Recommendation_weighted_word2vec.weighted_w2v_model] Attribute 'asin_index' defined outside __init__
+ML_Algorithm/weighted_word2vec.py:8: [C0411(wrong-import-order), ] standard import "import pickle" should be placed before "from gensim.models import Word2Vec"
+ML_Algorithm/weighted_word2vec.py:12: [C0411(wrong-import-order), ] standard import "from io import BytesIO" should be placed before "from gensim.models import Word2Vec"
+ML_Algorithm/weighted_word2vec.py:6: [W0611(unused-import), ] Unused Word2Vec imported from gensim.models
+ML_Algorithm/weighted_word2vec.py:7: [W0611(unused-import), ] Unused KeyedVectors imported from gensim.models
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==TF_IDF_algorithm:[18:74]
+==idf_algorithm:[20:76]
+        self.data = pd.read_pickle(
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.asin = asin
+        self.num_results = num_results
+
+    def display_img(self, url, ax, fig):
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def plot_heatmap(self, keys, values, labels, url, text):
+        gs = gridspec.GridSpec(2, 2, width_ratios=[4, 1], height_ratios=[4, 1])
+        fig = plt.figure(figsize=(25, 3))
+        ax = plt.subplot(gs[0])
+        ax = sns.heatmap(np.array([values]), annot=np.array([labels]))
+        ax.set_xticklabels(keys)
+        ax.set_title(text)
+        ax = plt.subplot(gs[1])
+        ax.grid(False)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        self.display_img(url, ax, fig)
+        plt.show()
+
+    def plot_heatmap_image(self, doc_id, vec1, vec2, url, text):
+        intersection = set(vec1.keys()) & set(vec2.keys())
+        for i in vec2:
+            if i not in intersection:
+                vec2[i] = 0
+        keys = list(vec2.keys())
+
+        values = [vec2[x] for x in vec2.keys()]
+        labels = []
+        for x in vec2.keys():
+            if x in self.title_vectorizer.vocabulary_:
+                labels.append(self.title_features[doc_id, self.title_vectorizer.vocabulary_[x]])
+            else:
+                labels.append(0)
+
+        self.plot_heatmap(keys, values, labels, url, text)
+
+    def text_to_vector(self, text):
+        word = re.compile(r'\w+')
+        words = word.findall(text)
+        return Counter(words)
+
+    def get_result(self, doc_id, content_a, content_b, url):
+        text1 = content_a
+        text2 = content_b
+        vector1 = self.text_to_vector(text1)
+        vector2 = self.text_to_vector(text2)
+        self.plot_heatmap_image(doc_id, vector1, vector2, url, text2)
+
+    def vectorized(self):
+        title_vectorizer = TfidfVectorizer(min_df=0.0)
+        title_features = title_vectorizer.fit_transform(self.data['title'])
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[48:85]
+==weighted_word2vec:[51:87]
+            else:
+                vec.append(np.zeros(shape=(300,)))
+        return np.array(vec)
+
+    def build_avg_vec(self, sentence, num_features, doc_id, m_name):
+
+        featureVec = np.zeros((num_features,), dtype="float32")
+        nwords = 0
+        for word in sentence.split():
+            nwords += 1
+            if word in self.vocab:
+                featureVec = np.add(featureVec, self.model[word])
+        if nwords > 0:
+            featureVec = np.divide(featureVec, nwords)
+        return featureVec
+
+    def heat_map_w2v(self, sentence1, sentence2, url, doc_id1, doc_id2, model):
+        s1_vec = self.get_word_vec(sentence1, doc_id1, model)
+        s2_vec = self.get_word_vec(sentence2, doc_id2, model)
+        s1_s2_dist = self.get_distance(s1_vec, s2_vec)
+        gs = gridspec.GridSpec(2, 2, width_ratios=[4, 1], height_ratios=[2, 1])
+        fig = plt.figure(figsize=(15, 15))
+        ax = plt.subplot(gs[0])
+        ax = sns.heatmap(np.round(s1_s2_dist, 4), annot=True)
+        ax.set_xticklabels(sentence2.split())
+        ax.set_yticklabels(sentence1.split())
+        ax.set_title(sentence2)
+
+        ax = plt.subplot(gs[1])
+        ax.grid(False)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        self.display_img(url, ax, fig)
+
+        plt.show()
+    def vectorized(self):
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[23:56]
+==idf_algorithm:[20:52]
+        self.data = pd.read_pickle(
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.asin = asin
+        self.num_results = num_results
+
+    def display_img(self, url, ax, fig):
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def plot_heatmap(self, keys, values, labels, url, text):
+        gs = gridspec.GridSpec(2, 2, width_ratios=[4, 1], height_ratios=[4, 1])
+        fig = plt.figure(figsize=(25, 3))
+        ax = plt.subplot(gs[0])
+        ax = sns.heatmap(np.array([values]), annot=np.array([labels]))
+        ax.set_xticklabels(keys)
+        ax.set_title(text)
+        ax = plt.subplot(gs[1])
+        ax.grid(False)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        self.display_img(url, ax, fig)
+        plt.show()
+
+    def plot_heatmap_image(self, doc_id, vec1, vec2, url, text, model):
+        intersection = set(vec1.keys()) & set(vec2.keys())
+        for i in vec2:
+            if i not in intersection:
+                vec2[i] = 0
+        keys = list(vec2.keys())
+
+        values = [vec2[x] for x in vec2.keys()]
+
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[107:131]
+==weighted_word2vec:[116:140]
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+                self.model = pickle.load(f)
+            self.vocab = self.model.keys()
+            for i in self.data['title']:
+                self.w2v_title.append(self.build_avg_vec(i, 300, doc_id, 'avg'))
+                doc_id += 1
+            self.w2v_title = np.array(self.w2v_title)
+            pairwise_dist = pairwise_distances(self.w2v_title, self.w2v_title[self.asin_index].reshape(1, -1))
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            pdists = np.sort(pairwise_dist.flatten())[0:self.num_results]
+            df_indices = list(self.data.index[indices])
+
+            for i in range(0, len(indices)):
+                self.heat_map_w2v(self.data['title'].loc[df_indices[0]], self.data['title'].loc[df_indices[i]],
+                                  self.data['medium_image_url'].loc[df_indices[i]], indices[0], indices[i], 'avg')
+                print('ASIN :', self.data['asin'].loc[df_indices[i]])
+                print('BRAND :', self.data['brand'].loc[df_indices[i]])
+                print('euclidean distance from given input image :', pdists[i])
+                print('=' * 125)
+        else:
+            print('ASIN number is not in data base')
+
+
+if __name__ == '__main__':
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[23:46]
+==weighted_word2vec:[26:49]
+        self.w2v_title = []
+        self.data = pd.read_pickle(
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.asin = asin
+        self.num_results = num_results
+
+    def display_img(self, url, ax, fig):
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def get_distance(self, vec1, vec2):
+        final_dist = []
+        for i in vec1:
+            dist = []
+            for j in vec2:
+                dist.append(np.linalg.norm(i - j))
+            final_dist.append(np.array(dist))
+        return np.array(final_dist)
+
+    def get_word_vec(self, sentence, doc_id, m_name):
+        vec = []
+        for i in sentence.split():
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[63:86]
+==weighted_word2vec:[33:57]
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def get_distance(self, vec1, vec2):
+        final_dist = []
+        for i in vec1:
+            dist = []
+            for j in vec2:
+                dist.append(np.linalg.norm(i - j))
+            final_dist.append(np.array(dist))
+        return np.array(final_dist)
+
+    def get_word_vec(self, sentence, doc_id, m_name):
+        vec = []
+        for i in sentence.split():
+            if i in self.vocab and i in self.title_vectorizer.vocabulary_:
+                vec.append(self.title_features[doc_id, self.title_vectorizer.vocabulary_[i]] * self.model[i])
+            else:
+                vec.append(np.zeros(shape=(300,)))
+        return np.array(vec)
+
+    def build_avg_vec(self, sentence, num_features, doc_id, m_name):
+
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[89:107]
+==weighted_word2vec:[97:115]
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+                self.model = pickle.load(f)
+            self.vocab = self.model.keys()
+            for i in self.data['title']:
+                self.w2v_title.append(self.build_avg_vec(i, 300, doc_id, 'avg'))
+                doc_id += 1
+            self.w2v_title = np.array(self.w2v_title)
+            pairwise_dist = pairwise_distances(self.w2v_title, self.w2v_title[self.asin_index].reshape(1, -1))
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def weighted_w2v_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            doc_id = 0
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==TF_IDF_algorithm:[93:110]
+==idf_algorithm:[106:123]
+            pairwise_dist = pairwise_distances(self.title_features, self.title_features[self.asin_index])
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            pdists = np.sort(pairwise_dist.flatten())[0:self.num_results]
+            df_indices = list(self.data.index[indices])
+            for i in range(0, len(indices)):
+                self.get_result(indices[i], self.data['title'].loc[df_indices[0]],
+                                self.data['title'].loc[df_indices[i]], self.data['medium_image_url'].loc[df_indices[i]])
+                print('ASIN :', self.data['asin'].loc[df_indices[i]])
+                print('Brand:', self.data['brand'].loc[df_indices[i]])
+                print('Title:', self.data['title'].loc[df_indices[i]])
+                print('Euclidean similarity with the query image :', pdists[i])
+                print('=' * 100)
+        else:
+            print('ASIN number is not in data base')
+
+
+if __name__ == '__main__':
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==TF_IDF_algorithm:[78:92]
+==idf_algorithm:[91:105]
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            self.title_vectorizer, self.title_features = self.vectorized()
+            pairwise_dist = pairwise_distances(self.title_features, self.title_features[self.asin_index])
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def idf_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[63:79]
+==avg_word2vec_algorithm:[30:46]
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def get_distance(self, vec1, vec2):
+        final_dist = []
+        for i in vec1:
+            dist = []
+            for j in vec2:
+                dist.append(np.linalg.norm(i - j))
+            final_dist.append(np.array(dist))
+        return np.array(final_dist)
+
+    def get_word_vec(self, sentence, doc_id, m_name):
+        vec = []
+        for i in sentence.split():
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[107:116]
+==weighted_word2vec:[97:106]
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+                self.model = pickle.load(f)
+            self.vocab = self.model.keys()
+            for i in self.data['title']:
+                self.w2v_title.append(self.build_avg_vec(i, 300, doc_id, 'avg'))
+                doc_id += 1
+            self.w2v_title = np.array(self.w2v_title)
+            pairwise_dist = pairwise_distances(self.w2v_title, self.w2v_title[self.asin_index].reshape(1, -1))
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[89:98]
+==weighted_word2vec:[116:125]
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+                self.model = pickle.load(f)
+            self.vocab = self.model.keys()
+            for i in self.data['title']:
+                self.w2v_title.append(self.build_avg_vec(i, 300, doc_id, 'avg'))
+                doc_id += 1
+            self.w2v_title = np.array(self.w2v_title)
+            pairwise_dist = pairwise_distances(self.w2v_title, self.w2v_title[self.asin_index].reshape(1, -1))
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[91:102]
+==avg_word2vec_algorithm:[54:65]
+        featureVec = np.zeros((num_features,), dtype="float32")
+        nwords = 0
+        for word in sentence.split():
+            nwords += 1
+            if word in self.vocab:
+                featureVec = np.add(featureVec, self.model[word])
+        if nwords > 0:
+            featureVec = np.divide(featureVec, nwords)
+        return featureVec
+
+    def heat_map_w2v(self, sentence1, sentence2, url, doc_id1, doc_id2, model):
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[101:111]
+==idf_algorithm:[113:123]
+                print('ASIN :', self.data['asin'].loc[df_indices[i]])
+                print('Brand:', self.data['brand'].loc[df_indices[i]])
+                print('Title:', self.data['title'].loc[df_indices[i]])
+                print('Euclidean similarity with the query image :', pdists[i])
+                print('=' * 100)
+        else:
+            print('ASIN number is not in data base')
+
+
+if __name__ == '__main__':
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[81:92]
+==idf_algorithm:[95:105]
+            pairwise_dist = pairwise_distances(self.title_features, self.title_features[self.asin_index])
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def idf_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[58:70]
+==idf_algorithm:[59:71]
+        self.plot_heatmap(keys, values, labels, url, text)
+
+    def text_to_vector(self, text):
+        word = re.compile(r'\w+')
+        words = word.findall(text)
+        return Counter(words)
+
+    def get_result(self, doc_id, content_a, content_b, url, model):
+        text1 = content_a
+        text2 = content_b
+        vector1 = self.text_to_vector(text1)
+        vector2 = self.text_to_vector(text2)
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[142:156]
+==weighted_word2vec:[105:119]
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def weighted_w2v_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            doc_id = 0
+            self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+                self.model = pickle.load(f)
+            self.vocab = self.model.keys()
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[126:134]
+==weighted_word2vec:[92:100]
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            doc_id = 0
+            self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
+            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+                self.model = pickle.load(f)
+            self.vocab = self.model.keys()
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[142:152]
+==avg_word2vec_algorithm:[97:107]
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def avg_w2v_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            doc_id = 0
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==TF_IDF_algorithm:[83:92]
+==weighted_word2vec:[105:114]
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def tfidf_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==idf_algorithm:[20:31]
+==weighted_word2vec:[27:38]
+        self.data = pd.read_pickle(
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.asin = asin
+        self.num_results = num_results
+
+    def display_img(self, url, ax, fig):
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def get_distance(self, vec1, vec2):
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==avg_word2vec_algorithm:[97:106]
+==idf_algorithm:[96:105]
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def idf_model(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[23:34]
+==avg_word2vec_algorithm:[24:35]
+        self.data = pd.read_pickle(
+            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.asin = asin
+        self.num_results = num_results
+
+    def display_img(self, url, ax, fig):
+        response = requests.get(url)
+        img = Image.open(BytesIO(response.content))
+        plt.imshow(img)
+
+    def get_distance(self, vec1, vec2):
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[82:92]
+==another_feature:[142:151]
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def idf_w2v_brand(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==TF_IDF_algorithm:[72:81]
+==weighted_word2vec:[87:95]
+        title_vectorizer = TfidfVectorizer(min_df=0.0)
+        title_features = title_vectorizer.fit_transform(self.data['title'])
+        return title_vectorizer, title_features
+
+
+    def get_similar_product(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==idf_algorithm:[37:45]
+==weighted_word2vec:[79:87]
+        ax = plt.subplot(gs[1])
+        ax.grid(False)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        self.display_img(url, ax, fig)
+
+        plt.show()
+    def vectorized(self):
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==TF_IDF_algorithm:[78:84]
+==idf_algorithm:[102:108]
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            self.title_vectorizer, self.title_features = self.vectorized()
+            pairwise_dist = pairwise_distances(self.title_features, self.title_features[self.asin_index])
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[93:99]
+==idf_algorithm:[106:112]
+            pairwise_dist = pairwise_distances(self.title_features, self.title_features[self.asin_index])
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            pdists = np.sort(pairwise_dist.flatten())[0:self.num_results]
+            df_indices = list(self.data.index[indices])
+            for i in range(0, len(indices)):
+                self.get_result(indices[i], self.data['title'].loc[df_indices[0]],
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==BOW_algorithm:[40:48]
+==avg_word2vec_algorithm:[76:85]
+        ax = plt.subplot(gs[1])
+        ax.grid(False)
+        ax.set_xticks([])
+        ax.set_yticks([])
+        self.display_img(url, ax, fig)
+
+        plt.show()
+
+    def get_similar_product(self):
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==Deep_Learning_vgg16:[31:39]
+==another_feature:[142:149]
+            indices = np.argsort(pairwise_dist.flatten())[0:self.num_results]
+            return indices
+        else:
+            return None
+
+    def idf_w2v_brand(self):
+        self.data = self.data.reset_index(drop=True)
+ML_Algorithm/weighted_word2vec.py:1: [R0801(duplicate-code), ] Similar lines in 2 files
+==another_feature:[123:130]
+==avg_word2vec_algorithm:[82:89]
+        plt.show()
+
+    def get_similar_product(self):
+        self.data = self.data.reset_index(drop=True)
+        self.asin_index = self.data[self.data['asin'] == self.asin].index
+        if self.asin in self.data['asin'].values:
+            doc_id = 0
+
+-----------------------------------
+Your code has been rated at 5.76/10
+
