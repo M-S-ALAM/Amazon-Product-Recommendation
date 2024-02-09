@@ -19,7 +19,7 @@ st.set_page_config(page_title='Amazon Recommendation', page_icon='🏡', layout=
 st.title(':green[Amazon Apparel Recommendations]')
 
 if all(key not in st.session_state.keys() for key in 'data'):
-    st.session_state['data'] = None
+    st.session_state['data'] = pd.read_pickle('database/16k_apperal_data_preprocessed')
 
 
 def fetch_image_from_url(url):
@@ -38,10 +38,10 @@ select_algorithm = st.selectbox('Choose Algorithm',
                                          'Algorithm with brand and color',
                                          'Deep Learning(VGG16)',
                                          'All the algorithm combined results'])
-number_ = st.number_input('Number of recommendation', min_value=1, max_value=10)
 
+number_ = st.number_input('Number of recommendation', min_value=1, max_value=10)
+data = st.session_state['data']
 submit_button = st.button(label='Prediction', type='primary')
-data = pd.read_pickle('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
 if submit_button:
     if asin_number is not None:
         indices = Combine_results(asin_number, number_, select_algorithm).Recommended_results()

@@ -28,6 +28,13 @@ class Recommend_with_features:
 
     """
     def __init__(self, asin, num_results, w1, w2):
+        """
+
+        :param asin:
+        :param num_results:
+        :param w1:
+        :param w2:
+        """
         self.extra_features = None
         self.model = None
         self.title_features = None
@@ -37,12 +44,16 @@ class Recommend_with_features:
         self.colors = None
         self.types = None
         self.brands = None
-        self.data = pd.read_pickle('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
         self.w2v_title = []
 
     def add_features(self):
+        """
+
+        :return:
+        """
         self.data['brand'].fillna(value="Not given", inplace=True)
         self.brands = [x.replace(" ", "-") for x in self.data['brand'].values]
         self.types = [x.replace(" ", "-") for x in self.data['product_type_name'].values]
@@ -61,6 +72,11 @@ class Recommend_with_features:
         return extra_features
 
     def display_img(self, url: str) -> list:
+        """
+
+        :param url: string
+        :rtype: None
+        """
         response = requests.get(url)
         img = Image.open(BytesIO(response.content))
         plt.imshow(img)
@@ -84,11 +100,23 @@ class Recommend_with_features:
         return np.array(vec)
 
     def vectorized(self):
+        """
+
+        :return:
+        """
         title_vectorizer = TfidfVectorizer(min_df=0.0)
         title_features = title_vectorizer.fit_transform(self.data['title'])
         return title_vectorizer, title_features
 
     def build_avg_vec(self, sentence, num_features, doc_id, m_name):
+        """
+
+        :param sentence:
+        :param num_features:
+        :param doc_id:
+        :param m_name:
+        :return:
+        """
         featureVec = np.zeros((num_features,), dtype="float32")
         nwords = 0
         for word in sentence.split():
@@ -99,9 +127,21 @@ class Recommend_with_features:
             featureVec = np.divide(featureVec, nwords)
         return featureVec
 
-    def heat_map_w2v_brand(self, sentance1, sentance2, url, doc_id1, doc_id2, df_id1, df_id2, model):
-        s1_vec = self.get_word_vec(sentance1, doc_id1)
-        s2_vec = self.get_word_vec(sentance2, doc_id2)
+    def heat_map_w2v_brand(self, sentence1, sentence2, url, doc_id1, doc_id2, df_id1, df_id2, model):
+        """
+
+        :param sentence1:
+        :param sentence2:
+        :param url:
+        :param doc_id1:
+        :param doc_id2:
+        :param df_id1:
+        :param df_id2:
+        :param model:
+        :return:
+        """
+        s1_vec = self.get_word_vec(sentence1, doc_id1)
+        s2_vec = self.get_word_vec(sentence2, doc_id2)
         s1_s2_dist = self.get_distance(s1_vec, s2_vec)
         data_matrix = [['Asin', 'Brand', 'Color', 'Product type'],
                        [self.data['asin'].loc[df_id1], self.brands[doc_id1], self.colors[doc_id1], self.types[doc_id1]],
@@ -113,9 +153,9 @@ class Recommend_with_features:
         fig = plt.figure(figsize=(25, 5))
         ax1 = plt.subplot(gs[:, :-5])
         ax1 = sns.heatmap(np.round(s1_s2_dist, 6), annot=True)
-        ax1.set_xticklabels(sentance2.split())
-        ax1.set_yticklabels(sentance1.split())
-        ax1.set_title(sentance2)
+        ax1.set_xticklabels(sentence2.split())
+        ax1.set_yticklabels(sentence1.split())
+        ax1.set_title(sentence2)
         ax2 = plt.subplot(gs[:, 10:16])
         ax2.grid(False)
         ax2.set_xticks([])
@@ -124,12 +164,16 @@ class Recommend_with_features:
         plt.show()
 
     def get_similar_product(self):
+        """
+
+        :return:
+        """
         self.data = self.data.reset_index(drop=True)
         self.asin_index = self.data[self.data['asin'] == self.asin].index
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+            with open('database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             self.extra_features = self.add_features()
@@ -146,12 +190,16 @@ class Recommend_with_features:
             return None
 
     def idf_w2v_brand(self):
+        """
+
+        :return:
+        """
         self.data = self.data.reset_index(drop=True)
         self.asin_index = self.data[self.data['asin'] == self.asin].index
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+            with open('database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             self.extra_features = self.add_features()

@@ -19,7 +19,9 @@ from collections import Counter
 from matplotlib import gridspec
 import matplotlib.pyplot as plt
 
-__author__ = "msalamiitd@gmail.com"
+__author__ = "Md Shahbaz Alam"
+__email__ = "msalamiitd@hmail.com"
+__credits__ = "Md Shahbaz Alam"
 LOGGER = logging.getLogger(__name__)
 
 
@@ -27,8 +29,7 @@ class Recommendation_IDF:
     def __init__(self, asin, num_results):
         self.title_features = None
         self.title_vectorizer = None
-        self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 
@@ -130,5 +131,5 @@ class Recommendation_IDF:
 
 
 if __name__ == '__main__':
-    recommendation = Recommendation_IDF('B015YKMU80', 3)
+    recommendation = Recommendation_IDF(asin='B015YKMU80', num_results=3)
     recommendation.idf_model()

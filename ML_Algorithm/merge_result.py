@@ -18,12 +18,11 @@ LOGGER = logging.getLogger(__name__)
 
 
 class Combine_results:
-    def __init__(self, asin, num_resuls, model):
+    def __init__(self, asin, num_resuls, model=None):
         self.asin = asin
         self.num_results = num_resuls
         self.model = model
-        self.data =  pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data =  pd.read_pickle('database/16k_apperal_data_preprocessed')
 
     def Recommended_results(self):
         Indices = set()

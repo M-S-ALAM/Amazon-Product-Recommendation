@@ -10,19 +10,23 @@ from io import BytesIO
 from PIL import Image
 import numpy as np
 import seaborn as sns
-from matplotlib.backends.backend_agg import FigureCanvasAgg
 from sklearn.metrics import pairwise_distances
 from sklearn.feature_extraction.text import CountVectorizer
 from collections import Counter
 from matplotlib import gridspec
 import matplotlib.pyplot as plt
+import os
+
+__author__ = "Md Shahbaz Alam"
+__email__ = "msalamiitd@hmail.com"
+__credits__ = "Md Shahbaz Alam"
 
 
 class Recommendation_BOW:
     def __init__(self, asin, num_results):
+        self.asin_index = None
         self.title_features = None
-        self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 
@@ -84,7 +88,6 @@ class Recommendation_BOW:
             return indices
         else:
             return None
-
 
     def bag_of_words_model(self):
         self.data = self.data.reset_index(drop=True)

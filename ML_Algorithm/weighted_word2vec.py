@@ -1,10 +1,9 @@
 # -- coding: UTF-8 --
 """
-Convert text into audio.
-====================================
+Method to recommend similar product using weighted word to vector
+based on color, brand, product type, and title.
+========================================================================================
 """
-from gensim.models import Word2Vec
-from gensim.models import KeyedVectors
 import pickle
 import requests
 import matplotlib.pyplot as plt
@@ -25,8 +24,7 @@ class Recommendation_weighted_word2vec:
         self.title_features = None
         self.title_vectorizer = None
         self.w2v_title = []
-        self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 
@@ -95,7 +93,7 @@ class Recommendation_weighted_word2vec:
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+            with open('database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             for i in self.data['title']:
@@ -114,7 +112,7 @@ class Recommendation_weighted_word2vec:
         if self.asin in self.data['asin'].values:
             doc_id = 0
             self.title_vectorizer, self.title_features = self.vectorized()  # Fix here
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+            with open('database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             for i in self.data['title']:
@@ -138,5 +136,5 @@ class Recommendation_weighted_word2vec:
 
 
 if __name__ == '__main__':
-    recommendation = Recommendation_weighted_word2vec('B0758TBKRJ', 3)
+    recommendation = Recommendation_weighted_word2vec(asin='B0758TBKRJ', num_results= 3)
     recommendation.weighted_w2v_model()

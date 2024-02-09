@@ -1,6 +1,7 @@
 # -- coding: UTF-8 --
 """
-Method to recommend similar product based on color, brand, product type, and title.
+Method to recommend similar product using pretrained VGG16 model,
+based on color, brand, product type, and title.
 ========================================================================================
 """
 import numpy as np
@@ -12,7 +13,9 @@ import requests
 import logging
 from io import BytesIO
 
-__author__ = "msalamiitd@gmail.com"
+__author__ = "Md Shahbaz Alam"
+__email__ = "msalamiitd@hmail.com"
+__credits__ = "Md Shahbaz Alam"
 LOGGER = logging.getLogger(__name__)
 
 
@@ -20,13 +23,10 @@ class Deep_Learning_VGG16:
     def __init__(self, asin, num_results):
         self.asin = asin
         self.num_results = num_results
-        self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.df_asins = list(self.data['asin'])
-        self.bottleneck_features_train = np.load(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_data_cnn_features.npy')
-        self.asins = np.load(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_data_cnn_feature_asins.npy')
+        self.bottleneck_features_train = np.load('database/16k_data_cnn_features.npy')
+        self.asins = np.load('database/16k_data_cnn_feature_asins.npy')
 
     # get similar products using CNN features (VGG-16)
 

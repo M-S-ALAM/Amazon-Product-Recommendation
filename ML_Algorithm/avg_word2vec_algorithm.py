@@ -1,10 +1,9 @@
 # -- coding: UTF-8 --
 """
-Convert text into audio.
-====================================
+Method to recommend similar product using Average word to vector
+based on color, brand, product type, and title.
+========================================================================================
 """
-from gensim.models import Word2Vec
-from gensim.models import KeyedVectors
 import pickle
 import requests
 import logging
@@ -17,7 +16,9 @@ from sklearn.metrics import pairwise_distances
 from matplotlib import gridspec
 import numpy as np
 
-__author__ = "msalamiitd@gmail.com"
+__author__ = "Md Shahbaz Alam"
+__email__ = "msalamiitd@hmail.com"
+__credits__ = "Md Shahbaz Alam"
 LOGGER = logging.getLogger(__name__)
 
 
@@ -26,8 +27,7 @@ class Recommendation_word2vec:
         self.vocab = None
         self.model = None
         self.w2v_title = []
-        self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 
@@ -55,6 +55,14 @@ class Recommendation_word2vec:
         return np.array(vec)
 
     def build_avg_vec(self, sentence, num_features, doc_id, m_name):
+        """
+        Get average word to vec algorithm
+        :param sentence: string
+        :param num_features: int
+        :param doc_id: int
+        :param m_name: string
+        :return:
+        """
 
         featureVec = np.zeros((num_features,), dtype="float32")
         nwords = 0
@@ -67,6 +75,16 @@ class Recommendation_word2vec:
         return featureVec
 
     def heat_map_w2v(self, sentence1, sentence2, url, doc_id1, doc_id2, model):
+        """
+        Get the heat map
+        :param sentence1: list
+        :param sentence2: array
+        :param url: str
+        :param doc_id1: int64
+        :param doc_id2: int
+        :param model: str
+        :return: None
+        """
         s1_vec = self.get_word_vec(sentence1, doc_id1, model)
         s2_vec = self.get_word_vec(sentence2, doc_id2, model)
         s1_s2_dist = self.get_distance(s1_vec, s2_vec)
@@ -87,11 +105,15 @@ class Recommendation_word2vec:
         plt.show()
 
     def get_similar_product(self):
+        """
+        Find similar product
+        :return: int
+        """
         self.data = self.data.reset_index(drop=True)
         self.asin_index = self.data[self.data['asin'] == self.asin].index
         if self.asin in self.data['asin'].values:
             doc_id = 0
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+            with open('database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             for i in self.data['title']:
@@ -105,11 +127,15 @@ class Recommendation_word2vec:
             return None
 
     def avg_w2v_model(self):
+        """
+
+        :return:
+        """
         self.data = self.data.reset_index(drop=True)
         self.asin_index = self.data[self.data['asin'] == self.asin].index
         if self.asin in self.data['asin'].values:
             doc_id = 0
-            with open('/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/word2vec_model', 'rb') as f:
+            with open('database/word2vec_model', 'rb') as f:
                 self.model = pickle.load(f)
             self.vocab = self.model.keys()
             for i in self.data['title']:
@@ -133,5 +159,5 @@ class Recommendation_word2vec:
 
 
 if __name__ == '__main__':
-    recommendation = Recommendation_word2vec('B015YKMU80', 3)
+    recommendation = Recommendation_word2vec(asin ='B015YKMU80', num_results=3)
     recommendation.avg_w2v_model()

@@ -17,13 +17,16 @@ from collections import Counter
 from matplotlib import gridspec
 import matplotlib.pyplot as plt
 
+__author__ = "Md Shahbaz Alam"
+__email__ = "msalamiitd@hmail.com"
+__credits__ = "Md Shahbaz Alam"
+
 
 class Recommendation_TFIDF:
     def __init__(self, asin, num_results):
         self.title_features = None
         self.title_vectorizer=None
-        self.data = pd.read_pickle(
-            '/home/shobot/Desktop/Project pro/Amazon Product Reviews/database/16k_apperal_data_preprocessed')
+        self.data = pd.read_pickle('database/16k_apperal_data_preprocessed')
         self.asin = asin
         self.num_results = num_results
 
